@@ -1,0 +1,119 @@
+.pageContent {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+}
+
+.container {
+  height: 100vh;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  align-content: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1 {
+  color: var(--title);
+}
+
+.rankingHead {
+    margin: 3rem 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--text);
+}
+
+.rankingHead > div:last-child {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+.rankingHead > div:last-child > div:first-child {
+  padding-left: 1rem;
+}
+
+
+.rankingBody > div {
+  margin-bottom: 0.3rem;
+  display: grid;
+  grid-template-columns: 0.8fr 11fr; 
+  gap: 0.2rem;
+  height: 60px;
+}
+
+.rankingBody > div > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 5px 0 0 3px;
+
+  background-color: var(--white);
+
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.rankingBody > div > div:last-child {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 1fr 1fr;
+
+  border-radius: 0 3px 3px 0;
+  background-color: var(--white);
+}
+
+.rankingBody > div > div:last-child > div:first-child {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.perfil {
+  margin-left: 0.4rem;
+}
+
+.perfil  img {
+  border-radius: 50%;
+  max-width: 3.2rem;
+  margin-right: 1rem;
+}
+
+.perfil > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil > div > strong {
+  font-weight: 600;
+  color: var(--title);
+  padding-left: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.perfil > div > span {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text)
+}
+
+.perfil > div > span > svg{
+  color: var(--green);
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+}
+
+.challenges span {
+  color: var(--blue)
+}
+
+.exp span {
+  color: var(--blue)
+}

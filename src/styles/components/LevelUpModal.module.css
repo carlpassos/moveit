@@ -1,0 +1,193 @@
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--modal-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes oldLevelFadeIn {
+  0% {
+    opacity: 0;
+    top: 0px;
+    top: 30px;
+  }
+
+  25% {
+    opacity: 0;
+    top: 30px;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0;
+    top: -90px;
+  }
+
+  100% {
+    opacity: 0;
+    top: -90px;
+  }
+}
+
+@keyframes newLevelFade {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes boxesFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    margin-bottom: -400px;
+    width: 5%;
+    max-height: 5%;
+    transform: rotateY(-200deg);
+    position: absolute;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 100%;
+    width: 100%;
+  }
+}
+
+.container span {
+  animation: oldLevelFadeIn 4s ease;
+  position: absolute;
+  opacity: 0;
+
+  top: -90px;
+  left: 50%;
+  margin-left: -2.5rem;
+
+  font-size: 8.75rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.container {
+  background: var(--white);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem 0;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  animation: fadeIn 1s ease;
+}
+
+.container header {
+  
+  background: url('/icons/levelup.svg') no-repeat center;
+  background-size: contain;
+  animation: newLevelFade 3s ease;
+  padding: 0 4rem;
+}
+
+.container header div {
+  font-size: 8.75rem;
+  font-weight: 600;
+  color: var(--blue);
+  animation: boxesFadeIn 2s ease;
+}
+
+.container strong {
+  font-size: 2.25rem;
+  color: var(--title);
+  animation: boxesFadeIn 2s ease;
+}
+
+.container p {
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-top: 0.25rem;
+  margin-bottom: 3rem;
+  animation: boxesFadeIn 2s ease;
+}
+
+.container button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  background: transparent;
+  border: 0;
+  font-size: 0;
+  animation: boxesFadeIn 2s ease;
+  
+}
+
+.overlay > .container > a {
+  animation: fadeIn 1s ease;
+  animation: boxesFadeIn 2s ease;
+}
+
+.overlay > .container > a > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 400px;
+  max-width: 400px;
+  padding: 1.5rem 3rem;
+  border-radius: 0px 0px 5px 5px;
+
+  
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  background-color: #F5FCFF;
+  color: #2AA9E0;
+
+  position: absolute;
+  
+}
+
+.overlay > .container > a > div > svg {
+  margin-left: 1rem;
+}

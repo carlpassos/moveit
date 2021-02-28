@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+
+  justify-content: space-between;
+  
+  min-height: 320px;
+  
+  max-width: 300px;
+
+}
+
+.container > img {
+  max-width: 260px;
+}
+
+.container > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.messageBox {
+  margin-bottom: 2rem;
+  color: var(--text-highlight);
+}
+
+.messageBox > h1 {
+  margin-bottom: 1.7rem;
+  color: #fff;
+}
+
+.messageBox > div {
+  display: flex;
+  align-items: center;
+}
+
+.messageBox > div > svg {
+  font-size: 2.3rem;
+  color: var(--text-highlight);
+  margin-right: 1rem;
+}
+
+
+.messageBox > div {
+  display: flex;
+}
+
+.loginForm form {
+  display: flex;
+}
+
+.loginForm button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: #fff;
+
+  background-color: rgb(73,83,184);
+  border: none;
+
+  font-size: 1.3rem;
+
+  border-radius: 0 5px 5px 0;
+  padding: 1.2rem 1.2rem;
+}
+
+.loginForm button:hover {
+  background-color: rgba(73,83,184, 0.6);
+}
