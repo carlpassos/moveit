@@ -32,7 +32,7 @@ export function LeftBar() {
   
   return (
     <div className={styles.container}>
-      <img src="logo.svg" alt="Move.it"/>
+      <img src="Logo.svg" alt="Move.it"/>
       <ul>
         
         <Link href="/home"><li className={String(router.pathname ==='/' || router.pathname ==='/home' && styles.selected)}><FiHome /></li></Link>
